@@ -1,0 +1,8 @@
+*.xcworkspace
+*.xcodeproj
+xcuserdata 
+*.lock 
+# CocoaPods下的文件
+Pods/
+*.pbxproj
+#.idea
