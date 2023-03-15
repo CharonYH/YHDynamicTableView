@@ -1,6 +1,6 @@
 ### 1.UITableViewCell高度自适应
 <div>
-<img src="YHDynamicTableView/imgs/UITableViewCell高度自适应.png"/>
+<img src="YHDynamicTableView/imgs/UITableViewCell高度自适应.gif"/>
 </div>
 
 ### 2.UITableView自适应高度
