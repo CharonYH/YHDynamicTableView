@@ -12,3 +12,6 @@
 <div>
 <img src="YHDynamicTableView/imgs/UITableViewCell嵌套UICollectionView（自适应高度）.gif"/>
 </div>
+
+### 博客地址
+https://juejin.cn/post/7210762743309467705
