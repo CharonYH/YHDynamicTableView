@@ -15,7 +15,7 @@
 
 ### 4.UITableViewCell嵌套UITableView（自适应高度）
 <div>
-<img src="YHDynamicTableView/imgs/UITableViewCell嵌套UITableView（自适应高度）.gif"/>
+<img src="YHDynamicTableView/imgs/UITableViewCell嵌套UITableView（自适应高度）.gif" width="200px" height="433px"/>
 </div>
 
 ### 博客地址
