@@ -8,7 +8,7 @@
 <img src="YHDynamicTableView/imgs/UITableView高度自适应.gif"/>
 </div>
 
-### 3.UITableViewCell嵌套UITableView
+### 3.UITableViewCell嵌套UICollectionView
 <div>
 <img src="YHDynamicTableView/imgs/UITableViewCell嵌套UICollectionView（自适应高度）.gif"/>
 </div>
