@@ -29,6 +29,10 @@ UITableViewDataSource
 
 @implementation YHDynamicTableViewHeightViewController
 
+- (void)dealloc {
+    [self.tableView removeObserver:self forKeyPath:@"contentSize" context:(__bridge void *)self.tableView];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];

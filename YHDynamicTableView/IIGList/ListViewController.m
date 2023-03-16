@@ -33,6 +33,7 @@
 - (void)didSelectSectionController:(IGListSingleSectionController *)sectionController withObject:(IGConfigItem *)object {
     UIViewController *vc = [[NSClassFromString(object.viewControllerName) alloc] init];
     if (vc) {
+        vc.title = object.title;
         vc.view.backgroundColor = UIColor.whiteColor;
         [self.navigationController pushViewController:vc animated:YES];
     }
@@ -71,7 +72,8 @@
     return @[
         [IGConfigItem configItem:@"UITableViewCell高度自适应" viewControllerName:@"YHDynamicTableViewCellHeightViewController"],
         [IGConfigItem configItem:@"UITableView自适应高度" viewControllerName:@"YHDynamicTableViewHeightViewController"],
-        [IGConfigItem configItem:@"UITableViewCell嵌套UITableView自适应高度" viewControllerName:@"YHDynamicTableViewController"]
+        [IGConfigItem configItem:@"UITableViewCell嵌套UICollectionView自适应高度" viewControllerName:@"YHDynamicTableViewControllerC"],
+        [IGConfigItem configItem:@"UITableViewCell嵌套UITableView自适应高度" viewControllerName:@"YHDynamicTableViewControllerT"]
     ];
 }
 

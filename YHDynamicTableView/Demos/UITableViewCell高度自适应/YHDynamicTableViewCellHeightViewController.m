@@ -41,7 +41,7 @@ UITableViewDataSource
         titleLabel.text = self.dataSource[indexPath.row];
         colorView.backgroundColor = YHRandomColor;
     });
-    cell.backgroundColor = [UIColor colorWithRed:244/255.0 green:245/255.0 blue:250/255.0 alpha:1];
+    cell.backgroundColor = UIColor.whiteColor;
     return cell;
 }
 
@@ -61,7 +61,7 @@ UITableViewDataSource
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-        _tableView.backgroundColor = UIColor.whiteColor;
+        _tableView.backgroundColor = [UIColor colorWithRed:244/255.0 green:245/255.0 blue:250/255.0 alpha:1];
         _tableView.showsHorizontalScrollIndicator = NO;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.estimatedRowHeight = 10;
