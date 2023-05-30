@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		039257E929C1E252009E711A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039257E829C1E252009E711A /* AppDelegate.m */; };
+		039257F429C1E254009E711A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039257F329C1E254009E711A /* Assets.xcassets */; };
+		039257F729C1E254009E711A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039257F529C1E254009E711A /* LaunchScreen.storyboard */; };
+		039257FA29C1E254009E711A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 039257F929C1E254009E711A /* main.m */; };
+		0392580229C1FB74009E711A /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392580129C1FB74009E711A /* ListViewController.m */; };
+		0392580529C1FB89009E711A /* IGConfigItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392580429C1FB89009E711A /* IGConfigItem.m */; };
+		0392580929C1FD2A009E711A /* IGNormalCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392580829C1FD2A009E711A /* IGNormalCollectionViewCell.m */; };
+		0392581129C1FE3B009E711A /* YHDynamicHeightFittingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392581029C1FE3B009E711A /* YHDynamicHeightFittingTableViewCell.m */; };
+		0392581429C1FE46009E711A /* YHDynamicTableViewCellHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392581329C1FE46009E711A /* YHDynamicTableViewCellHeightViewController.m */; };
+		0392581929C200D3009E711A /* YHDynamicTableViewHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392581829C200D3009E711A /* YHDynamicTableViewHeightViewController.m */; };
+		0392581D29C20206009E711A /* YHDynamicTableViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392581C29C20206009E711A /* YHDynamicTableViewControllerC.m */; };
+		0392582029C2021C009E711A /* YHDynamicTableViewCellC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392581F29C2021C009E711A /* YHDynamicTableViewCellC.m */; };
+		0392582329C20242009E711A /* YHDynamicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392582229C20242009E711A /* YHDynamicCollectionViewCell.m */; };
+		0392582629C202B5009E711A /* YHDynamicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392582529C202B5009E711A /* YHDynamicCollectionView.m */; };
+		0392582929C202C7009E711A /* YHDynamicCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392582829C202C7009E711A /* YHDynamicCollectionHeaderView.m */; };
+		0392583229C2AB42009E711A /* YHDynamicTableViewControllerT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392583129C2AB42009E711A /* YHDynamicTableViewControllerT.m */; };
+		0392583529C2AC75009E711A /* YHDynamicTableViewCellT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392583429C2AC75009E711A /* YHDynamicTableViewCellT.m */; };
+		0392583929C2AD6A009E711A /* UIView+YHExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392583829C2AD6A009E711A /* UIView+YHExtention.m */; };
+		0392583C29C2BE09009E711A /* YHDynamicTableViewCellTS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0392583B29C2BE09009E711A /* YHDynamicTableViewCellTS.m */; };
+		0392584129C2C670009E711A /* UITableViewCell嵌套UICollectionView（自适应高度）.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0392583D29C2C670009E711A /* UITableViewCell嵌套UICollectionView（自适应高度）.gif */; };
+		0392584229C2C670009E711A /* UITableView高度自适应.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0392583E29C2C670009E711A /* UITableView高度自适应.gif */; };
+		0392584429C2C670009E711A /* UITableViewCell高度自适应.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0392584029C2C670009E711A /* UITableViewCell高度自适应.gif */; };
+		0392584A29C2CB8F009E711A /* UITableViewCell嵌套UITableView（自适应高度）.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0392584929C2CB8E009E711A /* UITableViewCell嵌套UITableView（自适应高度）.gif */; };
+		6A94D354FA5A63F64D951F4C /* Pods_YHDynamicTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231A416F8E42D5EB2A94DDB4 /* Pods_YHDynamicTableView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		039257E429C1E252009E711A /* YHDynamicTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHDynamicTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039257E729C1E252009E711A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		039257E829C1E252009E711A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		039257F329C1E254009E711A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		039257F629C1E254009E711A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		039257F829C1E254009E711A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039257F929C1E254009E711A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0392580029C1FB74009E711A /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		0392580129C1FB74009E711A /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		0392580329C1FB89009E711A /* IGConfigItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGConfigItem.h; sourceTree = "<group>"; };
+		0392580429C1FB89009E711A /* IGConfigItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGConfigItem.m; sourceTree = "<group>"; };
+		0392580729C1FD2A009E711A /* IGNormalCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGNormalCollectionViewCell.h; sourceTree = "<group>"; };
+		0392580829C1FD2A009E711A /* IGNormalCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGNormalCollectionViewCell.m; sourceTree = "<group>"; };
+		0392580F29C1FE3B009E711A /* YHDynamicHeightFittingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicHeightFittingTableViewCell.h; sourceTree = "<group>"; };
+		0392581029C1FE3B009E711A /* YHDynamicHeightFittingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicHeightFittingTableViewCell.m; sourceTree = "<group>"; };
+		0392581229C1FE46009E711A /* YHDynamicTableViewCellHeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewCellHeightViewController.h; sourceTree = "<group>"; };
+		0392581329C1FE46009E711A /* YHDynamicTableViewCellHeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicTableViewCellHeightViewController.m; sourceTree = "<group>"; };
+		0392581529C1FF03009E711A /* YHDynamicTableViewDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewDefine.h; sourceTree = "<group>"; };
+		0392581729C200D3009E711A /* YHDynamicTableViewHeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewHeightViewController.h; sourceTree = "<group>"; };
+		0392581829C200D3009E711A /* YHDynamicTableViewHeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicTableViewHeightViewController.m; sourceTree = "<group>"; };
+		0392581B29C20206009E711A /* YHDynamicTableViewControllerC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewControllerC.h; sourceTree = "<group>"; };
+		0392581C29C20206009E711A /* YHDynamicTableViewControllerC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicTableViewControllerC.m; sourceTree = "<group>"; };
+		0392581E29C2021C009E711A /* YHDynamicTableViewCellC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewCellC.h; sourceTree = "<group>"; };
+		0392581F29C2021C009E711A /* YHDynamicTableViewCellC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicTableViewCellC.m; sourceTree = "<group>"; };
+		0392582129C20242009E711A /* YHDynamicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicCollectionViewCell.h; sourceTree = "<group>"; };
+		0392582229C20242009E711A /* YHDynamicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicCollectionViewCell.m; sourceTree = "<group>"; };
+		0392582429C202B5009E711A /* YHDynamicCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicCollectionView.h; sourceTree = "<group>"; };
+		0392582529C202B5009E711A /* YHDynamicCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicCollectionView.m; sourceTree = "<group>"; };
+		0392582729C202C7009E711A /* YHDynamicCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicCollectionHeaderView.h; sourceTree = "<group>"; };
+		0392582829C202C7009E711A /* YHDynamicCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicCollectionHeaderView.m; sourceTree = "<group>"; };
+		0392583029C2AB42009E711A /* YHDynamicTableViewControllerT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewControllerT.h; sourceTree = "<group>"; };
+		0392583129C2AB42009E711A /* YHDynamicTableViewControllerT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicTableViewControllerT.m; sourceTree = "<group>"; };
+		0392583329C2AC75009E711A /* YHDynamicTableViewCellT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewCellT.h; sourceTree = "<group>"; };
+		0392583429C2AC75009E711A /* YHDynamicTableViewCellT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicTableViewCellT.m; sourceTree = "<group>"; };
+		0392583729C2AD6A009E711A /* UIView+YHExtention.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YHExtention.h"; sourceTree = "<group>"; };
+		0392583829C2AD6A009E711A /* UIView+YHExtention.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YHExtention.m"; sourceTree = "<group>"; };
+		0392583A29C2BE09009E711A /* YHDynamicTableViewCellTS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDynamicTableViewCellTS.h; sourceTree = "<group>"; };
+		0392583B29C2BE09009E711A /* YHDynamicTableViewCellTS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDynamicTableViewCellTS.m; sourceTree = "<group>"; };
+		0392583D29C2C670009E711A /* UITableViewCell嵌套UICollectionView（自适应高度）.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "UITableViewCell嵌套UICollectionView（自适应高度）.gif"; sourceTree = "<group>"; };
+		0392583E29C2C670009E711A /* UITableView高度自适应.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "UITableView高度自适应.gif"; sourceTree = "<group>"; };
+		0392584029C2C670009E711A /* UITableViewCell高度自适应.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "UITableViewCell高度自适应.gif"; sourceTree = "<group>"; };
+		0392584929C2CB8E009E711A /* UITableViewCell嵌套UITableView（自适应高度）.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "UITableViewCell嵌套UITableView（自适应高度）.gif"; sourceTree = "<group>"; };
+		231A416F8E42D5EB2A94DDB4 /* Pods_YHDynamicTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHDynamicTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FCC74195ED4EE06EBE00444 /* Pods-YHDynamicTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHDynamicTableView.release.xcconfig"; path = "Target Support Files/Pods-YHDynamicTableView/Pods-YHDynamicTableView.release.xcconfig"; sourceTree = "<group>"; };
+		A18587CEA96974C330420983 /* Pods-YHDynamicTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHDynamicTableView.debug.xcconfig"; path = "Target Support Files/Pods-YHDynamicTableView/Pods-YHDynamicTableView.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		039257E129C1E252009E711A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A94D354FA5A63F64D951F4C /* Pods_YHDynamicTableView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		039257DB29C1E252009E711A = {
+			isa = PBXGroup;
+			children = (
+				039257E629C1E252009E711A /* YHDynamicTableView */,
+				039257E529C1E252009E711A /* Products */,
+				DA257A30F790F1485E042D73 /* Pods */,
+				69540591B945DA8C1CD15450 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		039257E529C1E252009E711A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				039257E429C1E252009E711A /* YHDynamicTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		039257E629C1E252009E711A /* YHDynamicTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0392582E29C22107009E711A /* imgs */,
+				0392580629C1FD13009E711A /* IIGList */,
+				0392580A29C1FDE9009E711A /* Demos */,
+				039257E729C1E252009E711A /* AppDelegate.h */,
+				039257E829C1E252009E711A /* AppDelegate.m */,
+				039257F329C1E254009E711A /* Assets.xcassets */,
+				039257F529C1E254009E711A /* LaunchScreen.storyboard */,
+				039257F829C1E254009E711A /* Info.plist */,
+				039257F929C1E254009E711A /* main.m */,
+				0392581529C1FF03009E711A /* YHDynamicTableViewDefine.h */,
+			);
+			path = YHDynamicTableView;
+			sourceTree = "<group>";
+		};
+		0392580629C1FD13009E711A /* IIGList */ = {
+			isa = PBXGroup;
+			children = (
+				0392580029C1FB74009E711A /* ListViewController.h */,
+				0392580129C1FB74009E711A /* ListViewController.m */,
+				0392580329C1FB89009E711A /* IGConfigItem.h */,
+				0392580429C1FB89009E711A /* IGConfigItem.m */,
+				0392580729C1FD2A009E711A /* IGNormalCollectionViewCell.h */,
+				0392580829C1FD2A009E711A /* IGNormalCollectionViewCell.m */,
+			);
+			path = IIGList;
+			sourceTree = "<group>";
+		};
+		0392580A29C1FDE9009E711A /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				0392583629C2AD5B009E711A /* Category */,
+				0392582F29C2AA61009E711A /* UITableViewCell嵌套UITableView */,
+				0392581A29C201F8009E711A /* UITableViewCell嵌套UICollectionView */,
+				0392581629C20094009E711A /* UITableView自适应高度 */,
+				0392580B29C1FE0A009E711A /* UITableViewCell高度自适应 */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		0392580B29C1FE0A009E711A /* UITableViewCell高度自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				0392580F29C1FE3B009E711A /* YHDynamicHeightFittingTableViewCell.h */,
+				0392581029C1FE3B009E711A /* YHDynamicHeightFittingTableViewCell.m */,
+				0392581229C1FE46009E711A /* YHDynamicTableViewCellHeightViewController.h */,
+				0392581329C1FE46009E711A /* YHDynamicTableViewCellHeightViewController.m */,
+			);
+			path = "UITableViewCell高度自适应";
+			sourceTree = "<group>";
+		};
+		0392581629C20094009E711A /* UITableView自适应高度 */ = {
+			isa = PBXGroup;
+			children = (
+				0392581729C200D3009E711A /* YHDynamicTableViewHeightViewController.h */,
+				0392581829C200D3009E711A /* YHDynamicTableViewHeightViewController.m */,
+			);
+			path = "UITableView自适应高度";
+			sourceTree = "<group>";
+		};
+		0392581A29C201F8009E711A /* UITableViewCell嵌套UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0392581B29C20206009E711A /* YHDynamicTableViewControllerC.h */,
+				0392581C29C20206009E711A /* YHDynamicTableViewControllerC.m */,
+				0392582729C202C7009E711A /* YHDynamicCollectionHeaderView.h */,
+				0392582829C202C7009E711A /* YHDynamicCollectionHeaderView.m */,
+				0392581E29C2021C009E711A /* YHDynamicTableViewCellC.h */,
+				0392581F29C2021C009E711A /* YHDynamicTableViewCellC.m */,
+				0392582129C20242009E711A /* YHDynamicCollectionViewCell.h */,
+				0392582229C20242009E711A /* YHDynamicCollectionViewCell.m */,
+				0392582429C202B5009E711A /* YHDynamicCollectionView.h */,
+				0392582529C202B5009E711A /* YHDynamicCollectionView.m */,
+			);
+			path = "UITableViewCell嵌套UICollectionView";
+			sourceTree = "<group>";
+		};
+		0392582E29C22107009E711A /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				0392583E29C2C670009E711A /* UITableView高度自适应.gif */,
+				0392584029C2C670009E711A /* UITableViewCell高度自适应.gif */,
+				0392583D29C2C670009E711A /* UITableViewCell嵌套UICollectionView（自适应高度）.gif */,
+				0392584929C2CB8E009E711A /* UITableViewCell嵌套UITableView（自适应高度）.gif */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
+		0392582F29C2AA61009E711A /* UITableViewCell嵌套UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				0392583029C2AB42009E711A /* YHDynamicTableViewControllerT.h */,
+				0392583129C2AB42009E711A /* YHDynamicTableViewControllerT.m */,
+				0392583329C2AC75009E711A /* YHDynamicTableViewCellT.h */,
+				0392583429C2AC75009E711A /* YHDynamicTableViewCellT.m */,
+				0392583A29C2BE09009E711A /* YHDynamicTableViewCellTS.h */,
+				0392583B29C2BE09009E711A /* YHDynamicTableViewCellTS.m */,
+			);
+			path = "UITableViewCell嵌套UITableView";
+			sourceTree = "<group>";
+		};
+		0392583629C2AD5B009E711A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0392583729C2AD6A009E711A /* UIView+YHExtention.h */,
+				0392583829C2AD6A009E711A /* UIView+YHExtention.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		69540591B945DA8C1CD15450 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				231A416F8E42D5EB2A94DDB4 /* Pods_YHDynamicTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA257A30F790F1485E042D73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A18587CEA96974C330420983 /* Pods-YHDynamicTableView.debug.xcconfig */,
+				2FCC74195ED4EE06EBE00444 /* Pods-YHDynamicTableView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		039257E329C1E252009E711A /* YHDynamicTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039257FD29C1E254009E711A /* Build configuration list for PBXNativeTarget "YHDynamicTableView" */;
+			buildPhases = (
+				D82AE01114D7AFF3870CB40C /* [CP] Check Pods Manifest.lock */,
+				039257E029C1E252009E711A /* Sources */,
+				039257E129C1E252009E711A /* Frameworks */,
+				039257E229C1E252009E711A /* Resources */,
+				F57E50702FB15A1D86FED024 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YHDynamicTableView;
+			productName = YHDynamicTableView;
+			productReference = 039257E429C1E252009E711A /* YHDynamicTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		039257DC29C1E252009E711A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					039257E329C1E252009E711A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 039257DF29C1E252009E711A /* Build configuration list for PBXProject "YHDynamicTableView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 039257DB29C1E252009E711A;
+			productRefGroup = 039257E529C1E252009E711A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				039257E329C1E252009E711A /* YHDynamicTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		039257E229C1E252009E711A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039257F729C1E254009E711A /* LaunchScreen.storyboard in Resources */,
+				0392584129C2C670009E711A /* UITableViewCell嵌套UICollectionView（自适应高度）.gif in Resources */,
+				039257F429C1E254009E711A /* Assets.xcassets in Resources */,
+				0392584229C2C670009E711A /* UITableView高度自适应.gif in Resources */,
+				0392584429C2C670009E711A /* UITableViewCell高度自适应.gif in Resources */,
+				0392584A29C2CB8F009E711A /* UITableViewCell嵌套UITableView（自适应高度）.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D82AE01114D7AFF3870CB40C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YHDynamicTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F57E50702FB15A1D86FED024 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YHDynamicTableView/Pods-YHDynamicTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YHDynamicTableView/Pods-YHDynamicTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YHDynamicTableView/Pods-YHDynamicTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039257E029C1E252009E711A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0392580529C1FB89009E711A /* IGConfigItem.m in Sources */,
+				039257E929C1E252009E711A /* AppDelegate.m in Sources */,
+				0392583929C2AD6A009E711A /* UIView+YHExtention.m in Sources */,
+				0392580929C1FD2A009E711A /* IGNormalCollectionViewCell.m in Sources */,
+				0392580229C1FB74009E711A /* ListViewController.m in Sources */,
+				0392582329C20242009E711A /* YHDynamicCollectionViewCell.m in Sources */,
+				0392582929C202C7009E711A /* YHDynamicCollectionHeaderView.m in Sources */,
+				0392582629C202B5009E711A /* YHDynamicCollectionView.m in Sources */,
+				0392581929C200D3009E711A /* YHDynamicTableViewHeightViewController.m in Sources */,
+				0392581429C1FE46009E711A /* YHDynamicTableViewCellHeightViewController.m in Sources */,
+				039257FA29C1E254009E711A /* main.m in Sources */,
+				0392581129C1FE3B009E711A /* YHDynamicHeightFittingTableViewCell.m in Sources */,
+				0392583229C2AB42009E711A /* YHDynamicTableViewControllerT.m in Sources */,
+				0392583C29C2BE09009E711A /* YHDynamicTableViewCellTS.m in Sources */,
+				0392582029C2021C009E711A /* YHDynamicTableViewCellC.m in Sources */,
+				0392583529C2AC75009E711A /* YHDynamicTableViewCellT.m in Sources */,
+				0392581D29C20206009E711A /* YHDynamicTableViewControllerC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		039257F529C1E254009E711A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				039257F629C1E254009E711A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		039257FB29C1E254009E711A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		039257FC29C1E254009E711A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		039257FE29C1E254009E711A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A18587CEA96974C330420983 /* Pods-YHDynamicTableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YHDynamicTableView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaobai.YHDynamicTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		039257FF29C1E254009E711A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCC74195ED4EE06EBE00444 /* Pods-YHDynamicTableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YHDynamicTableView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaobai.YHDynamicTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		039257DF29C1E252009E711A /* Build configuration list for PBXProject "YHDynamicTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039257FB29C1E254009E711A /* Debug */,
+				039257FC29C1E254009E711A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		039257FD29C1E254009E711A /* Build configuration list for PBXNativeTarget "YHDynamicTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039257FE29C1E254009E711A /* Debug */,
+				039257FF29C1E254009E711A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 039257DC29C1E252009E711A /* Project object */;
+}
